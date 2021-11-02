@@ -11,9 +11,9 @@ namespace MemeMaker.Convertidores
     class ConvierteBoolGrosor : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-        => (bool)value ? 0 : 5;
+        => (bool)value ? 3 : 0;
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-        => (bool)value ? 5 : 0;
+        => (bool)value ? 0 : 3;
     }
 }
